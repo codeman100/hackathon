@@ -1,0 +1,15 @@
+/* This is a css page that change the bootstrap css */
+
+
+/* This is a import links from google fonts to chhange the text font */
+/* changing the login offcanves css  */
+
+.modal-content{
+    background-color: #161616;
+    border-radius: 7px;
+    color: white;
+    backdrop-filter: blur(3px);
+    font-weight: bold;
+    font-size: 0.9rem;
+    font-family: 'Josefin Sans';
+}

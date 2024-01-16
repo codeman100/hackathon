@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+
+<style>
+    body {
+        background: url(https://i.pinimg.com/originals/13/44/cd/1344cdb8afc60644ab100307da6c3487.gif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .normal_heading {
+        font-family: 'Alkatra';
+        font-weight: bold;
+        padding: 2px 4px;
+        letter-spacing: 2px;
+        color: rgb(17, 17, 17);
+    }
+
+    .center_login_box {
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    form {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    input {
+        font-family: 'Alkatra';
+        font-weight: bold;
+        padding: 2px 4px;
+        letter-spacing: 1px;
+        margin: 5px;
+        font-size: 1.1rem;
+        background-color: transparent;
+        outline: 0;
+        color: rgb(17, 17, 17);
+        border: none;
+        border-bottom: 3px solid rgb(34, 34, 34);
+        width: 300px;
+    }
+
+    label {
+        font-family: 'Alkatra';
+        font-weight: bold;
+        padding: 2px 4px;
+        letter-spacing: 1px;
+    }
+
+    #unique_box {
+        border: none;
+        border-radius: 10px;
+        padding: 10px 5px;
+        background-color: rgba(238, 238, 238, 0.199);
+        backdrop-filter: blur(10px);
+        box-shadow: 1px 1px 5px rgb(39, 39, 39);
+    }
+
+    button {
+        border: none;
+        background-color: rgba(0, 0, 0, 0.397);
+        padding: 10px;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        color: white;
+        font-weight: bold;
+        font-family: 'Alkatra';
+    }
+
+    button:hover {
+        background-color: rgba(0, 0, 0, 0.555);
+        color: rgb(171, 171, 172);
+    }
+
+    img {
+        height: 25px;
+        width: 25px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .normal_box {
+        display: flex;
+    }
+
+    select {
+        padding: 10px;
+        background-color: rgb(24, 24, 24);
+        outline: 0;
+        border: none;
+        border-radius: 7px;
+        font-size: 1rem;
+        color: white;
+    }
+</style>
+
+<body>
+
+    <div id="unique_box">
+        <div class="center_login_box">
+            <h1 class="normal_heading"><img src="https://cdn-icons-png.flaticon.com/128/7340/7340005.png" alt="">WebReich</h1>
+            <p id="heading">One People, One Mindset, One Community</p>
+        </div>
+
+        <div class="center_login_box">
+            <h1 class="normal_heading">Log In</h1>
+            <form action="/login" method="post">
+
+                <label for="email">Email </label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Password </label>
+                <div class="normal_box">
+                    <input type="password" id="password" name="password" required>
+                    <h3 type="button" id="showPasswordButton" onclick="showPassword()"><img
+                            src="https://cdn-icons-png.flaticon.com/128/10812/10812267.png" alt=""></h3>
+                </div>
+                <br><br>
+                <button type="submit">Login</button>
+            </form>
+
+            <h3 class="normal_heading">Don't have a account <a href="http://localhost:3000/register">Register</a></h3>
+        </div>
+    </div>
+
+    <script>
+        function showPassword() {
+            var passwordInput = document.getElementById("password");
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css"> <!--This is a public css-->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <!--This is a bootstrap css to design bootstrap component as our requriments-->
+    <link rel="stylesheet" href="/css/everywhere.css">
+    <!--This is a css for not overwritting css for every component once you decelare a css is same for every components as our requriments-->
+</head>
+
+<body>
+    <!-- NAVBAR START -->
+    <div class="first">
+        <h3 id="heading"><img src="https://cdn-icons-png.flaticon.com/128/7340/7340005.png" alt="">WebReich</h3>
+        <p>One People, One Mindset, One Community</p>
+    </div>
+    <div id="navbar" class="welcome_page_box">
+        <div>
+            <h4 class="same_heading">Hi, <%= name %>!</h4>
+            <h6 class="language_para">
+                <%= email %>
+            </h6>
+        </div>
+        <div>
+            <div class="zero">
+                <a href="https://linktr.ee/ShriyashRulhe"><button>Get 1 : 1 <br> MentorShip</button></a>
+            </div>
+            <div class="second">
+                <button onclick="toggleMode(), toggleImage()" id="dark_light"><img
+                        src="https://cdn-icons-png.flaticon.com/128/4489/4489231.png" alt="" class="mode_icons"
+                        id="buttonImage"></button>
+
+                <a href=""><img src="https://cdn-icons-png.flaticon.com/128/64/64572.png" alt="" class="mode_icons"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="normal_heading_box">
+        <h5 class="same_heading">Get Started With Code Spark</h5>
+        <h5 class="same_heading">The DSA Blueprint for Crafting Your Coding Legacy</h5>
+        <h6 class="language_para">While the specific technologies and requirements can vary between companies, the
+            following topics were generally considered important in the context of Data Structures and Algorithms (DSA)
+            for software engineering job interviews, especially in MNCs (Multi-National Corporations) and top tech
+            companies (like FANG - Facebook, Amazon, Netflix, Google)</h6>
+    </div>
+
+    <div class="normal_heading_box">
+        <h5 class="same_heading">Basic Data Structures</h5>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">1. Arrays</h6>
+        </a>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">2. Linked List</h6>
+        </a>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">3. Stacks</h6>
+        </a>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">4. Queues</h6>
+        </a>
+        <h5 class="same_heading">Basic Algorithms </h5>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">5. Searching (Linear Search, Binary Search)</h6>
+        </a>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">6. Sorting (Bubble Sort, Selection Sort, Insertion Sort)</h6>
+        </a>
+        <h5 class="same_heading">Intermediate Data Structures </h5>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">7. Trees (Binary Trees, Binary Search Trees)</h6>
+        </a>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">8. Graphs (Representation, Traversal)</h6>
+        </a>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">9. Hash Tables</h6>
+        </a>
+        <h5 class="same_heading">Intermediate Algorithms </h5>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">10. Recursion and Backtracking</h6>
+        </a>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">11. Divide and Conquer</h6>
+        </a>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">12. Dynamic Programming (Memoization, Tabulation)</h6>
+        </a>
+        <h5 class="same_heading">Advanced Data Structures </h5>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">13. Heaps (Binary Heap, Priority Queue)</h6>
+        </a>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">14. Disjoint Set Union (Union-Find)</h6>
+        </a>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">15. Trie</h6>
+        </a>
+        <h5 class="same_heading">Advanced Algorithms</h5>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">16. Advanced Sorting Algorithms (Merge Sort, Quick Sort)</h6>
+        </a>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">17. Greedy Algorithms</h6>
+        </a>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">18. Graph Algorithms (Dijkstra's, Bellman-Ford, Floyd-Warshall)</h6>
+        </a>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">19. Network Flow Algorithms (Ford-Fulkerson)</h6>
+        </a>
+        <h5 class="same_heading">Advanced Topics</h5>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">20. Advanced Dynamic Programming (Optimizations, Bitmasking)</h6>
+        </a>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">21. String Algorithms (KMP, Rabin-Karp)</h6>
+        </a>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">22. Segment Trees</h6>
+        </a>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">23. AVL Trees and Red-Black Trees</h6>
+        </a>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">24. Advanced Graph Algorithms (Topological Sort, Strongly Connected Components)
+            </h6>
+        </a>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">25. NP-Hard and NP-Complete Problems</h6>
+        </a>
+        <h5 class="same_heading">Additional Concepts</h5>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">26. Big O Notation and Time Complexity Analysis</h6>
+        </a>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">27. Space Complexity Analysis</h6>
+        </a>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">28. Amortized Analysis</h6>
+        </a>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">29. Online Algorithms</h6>
+        </a>
+        <a href="http://localhost:3000/basic">
+            <h6 class="same_heading">30. Parallel Algorithms</h6>
+        </a>
+    </div>
+
+    <div class="normal_heading_box">
+        <h5 class="same_heading">Top 50 Interview DSA Question By Shriyash </h5>
+        <h6 class="language_para">By solving these questions daily, mastering DSA, and showing proficiency in them,
+            your knowledge will reach a supreme level, making you easily employable in top MNCs and startups.
+            and we'll progress together. Questions will be updated monthly to match industry
+            requirements.</h6>
+        <h6 class="language_para">
+            <li>
+                <font color="red"> Slove This 50 DSA(Data Structure and Algorithm) Questions </font>
+            </li>
+            <li>
+                <font color="red"> Calculate Your Score in Score Board</font>
+            </li>
+        </h6>
+        <div class="score_board_box">
+            <h5 class="same_heading">Score Board</h5>
+            <div class="progress-container">
+                <svg class="progress-circle" width="100" height="100">
+                    <circle cx="50" cy="50" r="40"></circle>
+                    <text x="50%" y="50%" class="progress-text">0%</text>
+                    <circle cx="50" cy="50" r="40" class="progress-bar"></circle>
+                </svg>
+            </div>
+            <h6 class="same_heading">Completed tasks: <span id="completedCount">0</span> <span> /
+                    50</span></h6>
+
+            <h6 class="same_heading"><img src="https://cdn-icons-png.flaticon.com/128/2920/2920277.png" alt=""
+                    class="same_icons"> : Slove Problems</h6>
+            <h6 class="same_heading"><img src="https://cdn-icons-png.flaticon.com/128/174/174883.png" alt=""
+                    class="same_icons"> : Solution Video</h6>
+        </div>
+    </div>
+
+    <div class="normal_heading_box">
+        <input type="text" id="search-bar" oninput="searchQuestions()"
+            placeholder="Search  que.no, companies, question....">
+    </div>
+
+    <ul id="taskList" id="question-list">
+        <div class="dsa_box question-item">
+            <li class="task">
+                <h6 class="dsa_heading">1. Subset Sum Equal To K</h6>
+            </li>
+            <div class="task_para">
+                <p> Moderate </p>
+                <p> 30m Avg Time </p>
+                <p> 65% success </p>
+            </div>
+            <div class="task_para">
+                <p> Topics </p>
+                <p> 2D Array </p>
+                <p> Dynamic Programming </p>
+            </div>
+            <div class="tasks_button_company">
+                <p>Accenture</p>
+                <p>Amazon</p>
+                <p>JP Morgan</p>
+                <p>Paypal</p>
+                <p>MTX</p>
+                <p>PayTm</p>
+                <p>Siemens</p>
+                <p>Deutsche Bank</p>
+                <p>Amdocs</p>
+                <p>HashedIn</p>
+            </div>
+            <div class="dsa_box_ans">
+                <a href="https://www.codingninjas.com/studio/problems/subset-sum-equal-to-k_1550954"> Slove Problem <img
+                        src="https://cdn-icons-png.flaticon.com/128/2920/2920277.png" alt="" class="same_icons"></a>
+                <a href=""> Solution <img src="https://cdn-icons-png.flaticon.com/128/174/174883.png" alt=""
+                        class="same_icons"></a>
+            </div>
+            <p>+15 more companies</p>
+        </div>
+
+        <div class="dsa_box question-item">
+            <li class="task">
+                <h6 class="dsa_heading">2. Print Pascal’s Triangle</h6>
+            </li>
+            <div class="task_para">
+                <p> Easy </p>
+                <p> 30m Avg Time </p>
+                <p> 73.6% success </p>
+            </div>
+            <div class="task_para">
+                <p> Topics </p>
+                <p> 2D Array </p>
+                <p> Dynamic Programming </p>
+            </div>
+            <div class="tasks_button_company">
+                <!-- <p>Accenture</p>
+                <p>Amazon</p>
+                <p>JP Morgan</p>
+                <p>Paypal</p>
+                <p>MTX</p>
+                <p>PayTm</p>
+                <p>Siemens</p>
+                <p>Deutsche Bank</p>
+                <p>Amdocs</p>
+                <p>HashedIn</p> -->
+            </div>
+            <div class="dsa_box_ans">
+                <a href="https://leetcode.com/problems/pascals-triangle/description/"> Slove Problem <img
+                        src="https://cdn-icons-png.flaticon.com/128/2920/2920277.png" alt="" class="same_icons"></a>
+                <a href=""> Solution <img src="https://cdn-icons-png.flaticon.com/128/174/174883.png" alt=""
+                        class="same_icons"></a>
+            </div>
+            <p>+15 more companies</p>
+        </div>
+
+        <div class="dsa_box question-item">
+            <li class="task">
+                <h6 class="dsa_heading">3. Largest Subarray With Equal Number Of 0s And 1s</h6>
+            </li>
+            <div class="task_para">
+                <p> Medium </p>
+                <p> 10m Avg Time </p>
+                <p> 85% success </p>
+            </div>
+            <div class="task_para">
+                <p> Topics </p>
+                <p> Array </p>
+                <p> Hash Table </p>
+            </div>
+            <div class="tasks_button_company">
+                <p>Phone Pe</p>
+                <p>Media.net</p>
+                <p>Oracle</p>
+                <p>SAP Labs</p>
+                <p>Morgan Stanley</p>
+                <p>Paypal</p>
+                <p>Housing.com</p>
+                <p>LTI</p>
+                <p>Quora</p>
+            </div>
+            <div class="dsa_box_ans">
+                <a
+                    href="https://www.codingninjas.com/studio/problems/largest-subarray-with-equal-number-of-0s-and-1s_839812">
+                    Slove Problem <img src="https://cdn-icons-png.flaticon.com/128/2920/2920277.png" alt=""
+                        class="same_icons"></a>
+                <a href=""> Solution <img src="https://cdn-icons-png.flaticon.com/128/174/174883.png" alt=""
+                        class="same_icons"></a>
+            </div>
+            <p>+12 more companies</p>
+        </div>
+
+        <div class="dsa_box question-item">
+            <li class="task">
+                <h6 class="dsa_heading">4. Median of two sorted arrays</h6>
+            </li>
+            <div class="task_para">
+                <p> Hard </p>
+                <p> 25m Avg Time </p>
+                <p> 65% success </p>
+            </div>
+            <div class="task_para">
+                <p> Topics </p>
+                <p> Binary Search </p>
+                <p> Array </p>
+            </div>
+            <div class="tasks_button_company">
+                <p>IBM</p>
+                <p>BYJUS</p>
+                <p>Apple</p>
+                <p>Google</p>
+                <p>Amazon</p>
+                <p>LinkedIN</p>
+                <p>Paypal</p>
+                <p>Goldman Sachs</p>
+                <p>Grab</p>
+                <p>VMware INC</p>
+                <p>Tata 1mg</p>
+                <p>Optum</p>
+                <p>Coding Ninjas</p>
+            </div>
+            <div class="dsa_box_ans">
+                <a href="https://www.codingninjas.com/studio/problems/median-of-two-sorted-arrays_985294"> Slove Problem
+                    <img src="https://cdn-icons-png.flaticon.com/128/2920/2920277.png" alt="" class="same_icons"></a>
+                <a href=""> Solution <img src="https://cdn-icons-png.flaticon.com/128/174/174883.png" alt=""
+                        class="same_icons"></a>
+            </div>
+            <p>+29 more companies</p>
+        </div>
+
+        <div class="dsa_box question-item">
+            <li class="task">
+                <h6 class="dsa_heading">5. Maximum Subarray Sum</h6>
+            </li>
+            <div class="task_para">
+                <p> Medium </p>
+                <p> 35m Avg Time </p>
+                <p> 75% success </p>
+            </div>
+            <div class="task_para">
+                <p> Topics :- </p>
+                <p> Dynamic Programming </p>
+                <p> Array </p>
+            </div>
+            <div class="tasks_button_company">
+                <!-- <p>IBM</p>
+                <p>BYJUS</p>
+                <p>Apple</p>
+                <p>Google</p> -->
+            </div>
+            <div class="dsa_box_ans">
+                <a href="https://www.codingninjas.com/studio/problem-details/maximum-subarray-sum_630526"> Slove Problem
+                    <img src="https://cdn-icons-png.flaticon.com/128/2920/2920277.png" alt="" class="same_icons"></a>
+                <a href=""> Solution <img src="https://cdn-icons-png.flaticon.com/128/174/174883.png" alt=""
+                        class="same_icons"></a>
+            </div>
+            <p>+29 more companies</p>
+        </div>
+
+        <div class="dsa_box question-item">
+            <li class="task">
+                <h6 class="dsa_heading">6. Longest Substring Without Repeating Characters</h6>
+            </li>
+            <div class="task_para">
+                <p> Medium </p>
+                <p> 25m Avg Time </p>
+                <p> 80% success </p>
+            </div>
+            <div class="task_para">
+                <p> Topics :- </p>
+                <p> String </p>
+                <p> Binary Search </p>
+            </div>
+            <div class="tasks_button_company">
+                <p>Flipkart</p>
+                <p>Myntra</p>
+                <p>Samgsung</p>
+                <p>Amazon</p>
+                <p>Google</p>
+                <p>Walmart</p>
+                <p>Oracle</p>
+                <p>Grab</p>
+                <p>HCL</p>
+                <p>Cashify</p>
+                <p>Ivy Comptech</p>
+                <p>Spinny</p>
+            </div>
+            <div class="dsa_box_ans">
+                <a
+                    href="https://www.codingninjas.com/studio/problems/longest-substring-without-repeating-characters_758894">
+                    Slove Problem
+                    <img src="https://cdn-icons-png.flaticon.com/128/2920/2920277.png" alt="" class="same_icons"></a>
+                <a href=""> Solution <img src="https://cdn-icons-png.flaticon.com/128/174/174883.png" alt=""
+                        class="same_icons"></a>
+            </div>
+            <p>+22 more companies</p>
+        </div>
+
+        <div class="dsa_box question-item">
+            <li class="task">
+                <h6 class="dsa_heading">7. Best time to buy and sell stock</h6>
+            </li>
+            <div class="task_para">
+                <p> Easy </p>
+                <p> 30m Avg Time </p>
+                <p> 80% success </p>
+            </div>
+            <div class="task_para">
+                <p> Topics :- </p>
+                <p> Array </p>
+                <p> Greedy </p>
+            </div>
+            <div class="tasks_button_company">
+                <p>TCS</p>
+                <p>TechWave Consulting</p>
+            </div>
+            <div class="dsa_box_ans">
+                <a
+                    href="https://www.codingninjas.com/studio/problems/longest-substring-without-repeating-characters_758894">
+                    Slove Problem
+                    <img src="https://cdn-icons-png.flaticon.com/128/2920/2920277.png" alt="" class="same_icons"></a>
+                <a href=""> Solution <img src="https://cdn-icons-png.flaticon.com/128/174/174883.png" alt=""
+                        class="same_icons"></a>
+            </div>
+            <p>+5 more companies</p>
+        </div>
+
+        <div class="dsa_box question-item">
+            <li class="task">
+                <h6 class="dsa_heading">8. Inorder Sucessor</h6>
+            </li>
+            <div class="task_para">
+                <p> Medium </p>
+                <p> 30m Avg Time </p>
+                <p> 70% success </p>
+            </div>
+            <div class="task_para">
+                <p> Topics :- </p>
+                <p> Binary Tree </p>
+            </div>
+            <div class="tasks_button_company">
+                <p>Amazon</p>
+                <p>SAP Labs</p>
+                <p>GamesKraft</p>
+                <p>Josh Tech Group</p>
+            </div>
+            <div class="dsa_box_ans">
+                <a href="https://www.codingninjas.com/studio/problems/inorder-sucessor_799913">
+                    Slove Problem
+                    <img src="https://cdn-icons-png.flaticon.com/128/2920/2920277.png" alt="" class="same_icons"></a>
+                <a href=""> Solution <img src="https://cdn-icons-png.flaticon.com/128/174/174883.png" alt=""
+                        class="same_icons"></a>
+            </div>
+            <p>+4 more companies</p>
+        </div>
+
+        <div class="dsa_box question-item">
+            <li class="task">
+                <h6 class="dsa_heading">9. Lexicographically Smallest Array</h6>
+            </li>
+            <div class="task_para">
+                <p> Easy </p>
+                <p> 15m Avg Time </p>
+                <p> 85% success </p>
+            </div>
+            <div class="task_para">
+                <p> Topics :- </p>
+                <p> Array </p>
+            </div>
+            <div class="tasks_button_company">
+                <p>Ola</p>
+                <p>A.P.T</p>
+                <p>Nokia</p>
+                <p>Nosh Tech</p>
+            </div>
+            <div class="dsa_box_ans">
+                <a
+                    href="https://www.codingninjas.com/studio/problems/lexicographically-smallest-array-after-k-consecutive-swaps_981317">
+                    Slove Problem
+                    <img src="https://cdn-icons-png.flaticon.com/128/2920/2920277.png" alt="" class="same_icons"></a>
+                <a href=""> Solution <img src="https://cdn-icons-png.flaticon.com/128/174/174883.png" alt=""
+                        class="same_icons"></a>
+            </div>
+            <p>+4 more companies</p>
+        </div>
+
+        <div class="dsa_box question-item">
+            <li class="task">
+                <h6 class="dsa_heading">10. Container With Most Water</h6>
+            </li>
+            <div class="task_para">
+                <p> Easy </p>
+                <p> 15m Avg Time </p>
+                <p> 90% success </p>
+            </div>
+            <div class="task_para">
+                <p> Topics :- </p>
+                <p> Array </p>
+            </div>
+            <div class="tasks_button_company">
+                <p>Samsung</p>
+                <p>Google</p>
+                <p>Expedia Group</p>
+                <p>Dunzo</p>
+                <p>Phone pe</p>
+                <p>Paytm</p>
+                <p>Adobe</p>
+                <p>Microsoft</p>
+                <p>Cognizant</p>
+                <p>Protium</p>
+                <p>SAP Labs</p>
+                <p>Goldman Sachs</p>
+            </div>
+            <div class="dsa_box_ans">
+                <a href="https://www.codingninjas.com/studio/problems/container-with-most-water_873860">
+                    Slove Problem
+                    <img src="https://cdn-icons-png.flaticon.com/128/2920/2920277.png" alt="" class="same_icons"></a>
+                <a href=""> Solution <img src="https://cdn-icons-png.flaticon.com/128/174/174883.png" alt=""
+                        class="same_icons"></a>
+            </div>
+            <p>+19 more companies</p>
+        </div>
+
+
+        <div class="dsa_box question-item">
+            <li class="task">
+                <h6 class="dsa_heading">11. Maximum Size Rectangle Sub-matrix With All 1's</h6>
+            </li>
+            <div class="task_para">
+                <p> Hard </p>
+                <p> 10m Avg Time </p>
+                <p> 80% success </p>
+            </div>
+            <div class="task_para">
+                <p> Topics :- </p>
+                <p> 2D Array </p>
+            </div>
+            <div class="tasks_button_company">
+                <p>American Express</p>
+                <p>Razorpay</p>
+                <p>Cisco</p>
+                <p>Dunzo</p>
+                <p>Adobe</p>
+                <p>Hike</p>
+                <p>Tata 1mg</p>
+                <p>Curefit</p>
+            </div>
+            <div class="dsa_box_ans">
+                <a
+                    href="https://www.codingninjas.com/studio/problems/maximum-size-rectangle-sub-matrix-with-all-1-s_893017">
+                    Slove Problem
+                    <img src="https://cdn-icons-png.flaticon.com/128/2920/2920277.png" alt="" class="same_icons"></a>
+                <a href=""> Solution <img src="https://cdn-icons-png.flaticon.com/128/174/174883.png" alt=""
+                        class="same_icons"></a>
+            </div>
+            <p>+15 more companies</p>
+        </div>
+
+        <div class="dsa_box question-item">
+            <li class="task">
+                <h6 class="dsa_heading">12. Number of Subsequences with Even and Odd Sum</h6>
+            </li>
+            <div class="task_para">
+                <p> Medium </p>
+                <p> 25m Avg Time </p>
+                <p> 60% success </p>
+            </div>
+            <div class="task_para">
+                <p> Topics :- </p>
+                <p> Array </p>
+                <p> Recursion </p>
+                <p> Dynamic Programming </p>
+            </div>
+            <div class="tasks_button_company">
+                <p>Spinny</p>
+                <p>Tata 1mg</p>
+                <p>Cisco</p>
+                <p>Adobe</p>
+            </div>
+            <div class="dsa_box_ans">
+                <a
+                    href="https://www.codingninjas.com/studio/problems/number-of-subsequences-with-even-and-odd-sum_873349">
+                    Slove Problem
+                    <img src="https://cdn-icons-png.flaticon.com/128/2920/2920277.png" alt="" class="same_icons"></a>
+                <a href=""> Solution <img src="https://cdn-icons-png.flaticon.com/128/174/174883.png" alt=""
+                        class="same_icons"></a>
+            </div>
+            <p>+4 more companies</p>
+        </div>
+
+        <div class="dsa_box question-item">
+            <li class="task">
+                <h6 class="dsa_heading">13. Longest Palindromic Substring</h6>
+            </li>
+            <div class="task_para">
+                <p> Medium </p>
+                <p> 35m Avg Time </p>
+                <p> 78% success </p>
+            </div>
+            <div class="task_para">
+                <p> Topics :- </p>
+                <p> Array </p>
+                <p> String </p>
+                <p> Dynamic Programming </p>
+            </div>
+            <div class="tasks_button_company">
+                <p>Inspirisys</p>
+                <p>Tata 1mg</p>
+                <p>Cisco</p>
+                <p>Adobe</p>
+            </div>
+            <div class="dsa_box_ans">
+                <a href="https://www.codingninjas.com/studio/problems/longest-palindromic-substring_758900">
+                    Slove Problem
+                    <img src="https://cdn-icons-png.flaticon.com/128/2920/2920277.png" alt="" class="same_icons"></a>
+                <a href=""> Solution <img src="https://cdn-icons-png.flaticon.com/128/174/174883.png" alt=""
+                        class="same_icons"></a>
+            </div>
+            <p>+4 more companies</p>
+        </div>
+    </ul>
+
+    <!-- </div> -->
+
+
+
+
+
+    <div class="footer">
+        <div class="normal_heading_box">
+            <hr>
+            <div class="first">
+                <h5 id="heading"><img src="https://cdn-icons-png.flaticon.com/128/7340/7340005.png" alt=""> WebReich
+                </h5>
+                <p>One People, One Mindset, One Community</p>
+            </div>
+            <h5 class="same_heading">Follow Us</h5>
+            <div class="footer_box">
+                <a href="https://www.youtube.com/@Webriech"><img
+                        src="https://cdn-icons-png.flaticon.com/128/174/174883.png" alt="" class="same_icons"></a>
+                <a href="https://www.instagram.com/shreexmann?igsh=OGQ5ZDc2ODk2ZA=="><img
+                        src="https://cdn-icons-png.flaticon.com/128/174/174855.png" alt="" class="same_icons"></a>
+                <a
+                    href="https://www.linkedin.com/in/shriyash-rulhe-655a9422a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img
+                        src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt="" class="same_icons"></a>
+                <a href="https://x.com/ShriyashRulhe?t=akUGDlfFqFq_TCVEjoz9ow&s=09"><img
+                        src="https://cdn-icons-png.flaticon.com/128/5968/5968830.png" alt="" class="same_icons"></a>
+                <a href="https://discord.com/invite/YUZzP6Dp"><img
+                        src="https://cdn-icons-png.flaticon.com/128/5968/5968756.png" alt="" class="same_icons"></a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="/js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

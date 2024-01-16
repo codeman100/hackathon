@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Language page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css"> <!--This is a public css-->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <!--This is a bootstrap css to design bootstrap component as our requriments-->
+    <link rel="stylesheet" href="/css/everywhere.css">
+    <!--This is a css for not overwritting css for every component once you decelare a css is same for every components as our requriments-->
+</head>
+
+<body>
+    <div class="first">
+        <h3 id="heading"><img src="https://cdn-icons-png.flaticon.com/128/7340/7340005.png" alt="">WebReich</h3>
+        <p>One People, One Mindset, One Community</p>
+    </div>
+
+    <!-- NAVBAR START -->
+    <div id="navbar">
+        <div class="zero">
+            <a href="https://linktr.ee/ShriyashRulhe"><button>Get 1 : 1 <br> MentorShip</button></a>
+        </div>
+        <div class="second">
+
+            <button onclick="toggleMode(), toggleImage()" id="dark_light"><img
+                    src="https://cdn-icons-png.flaticon.com/128/4489/4489231.png" alt="" class="mode_icons"
+                    id="buttonImage"></button>
+
+            <a href="http://localhost:3000/register"><button type="button" class="btn btn-primary"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal" id="login">
+                    Sign in
+                </button></a>
+
+            <a href="http://localhost:3000/login"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal" id="login">
+                    Login
+                </button></a>
+        </div>
+    </div>
+
+
+    <div class="normal_heading_box">
+        <h4 class="same_heading">Every developer should possess proficiency in a programming language</h4>
+        <h6 class="normal_heading">Learn all these programming languages from the Code Spark community roadmap. We
+            provide comprehensive roadmaps for students, enabling easy access to top-notch free internet resources.
+            So, don't worry about it; dive in deeply and learn anything you want for free. </h6>
+
+
+        <div class="scroll-container">
+            <div class="scroll-content">
+                <div class="scroll-item">
+                    <li><img src="https://cdn-icons-png.flaticon.com/128/3665/3665923.png" alt="" class="big_icons"
+                            value="c++">
+                    </li>
+                </div>
+
+                <div class="scroll-item">
+                    <li><img src="https://cdn-icons-png.flaticon.com/128/6132/6132222.png" alt="" class="big_icons">
+                    </li>
+                </div>
+
+                <div class="scroll-item">
+                    <li><img src="https://cdn-icons-png.flaticon.com/128/226/226777.png" alt="" class="big_icons">
+                    </li>
+                </div>
+
+                <div class="scroll-item">
+                    <li><img src="https://cdn-icons-png.flaticon.com/128/5968/5968350.png" alt="" class="big_icons">
+                    </li>
+                </div>
+
+                <div class="scroll-item">
+                    <li><img src="https://w7.pngwing.com/pngs/114/914/png-transparent-rust-programming-language-logo-machine-learning-haskell-crab-animals-cartoon-crab-thumbnail.png"
+                            alt="" class="big_icons"></li>
+                </div>
+
+                <div class="scroll-item">
+                    <li><img src="https://cdn-icons-png.flaticon.com/128/174/174854.png" alt="" class="big_icons">
+                    </li>
+                </div>
+
+                <div class="scroll-item">
+                    <li><img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt="" class="big_icons">
+                    </li>
+                </div>
+
+                <div class="scroll-item">
+                    <li><img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt="" class="big_icons">
+                    </li>
+                </div>
+
+                <div class="scroll-item">
+                    <li><img src="https://cdn-icons-png.flaticon.com/128/5968/5968322.png" alt="" class="big_icons">
+                    </li>
+                </div>
+
+                <div class="scroll-item">
+                    <li><img src="https://cdn-icons-png.flaticon.com/128/5968/5968332.png" alt="" class="big_icons">
+                    </li>
+                </div>
+
+                <div class="scroll-item">
+                    <li><img src="https://cdn-icons-png.flaticon.com/128/4492/4492311.png" alt="" class="big_icons">
+                    </li>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="normal_heading_box">
+        <select id="languageSelector">
+            <option value="none">Select Programming Language</option>
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="rust">Rust</option>
+            <option value="javascript">Javascript</option>
+            <option value="nodejs">Node js</option>
+            <option value="php">
+                <font color="darkred">PHP / NOT DONE</font>
+            </option>
+            <option value="sql">SQL</option>
+        </select>
+
+        <div id="roadmapContainer">
+
+            <div id="cpp" class="roadmap">
+                <iframe src="http://localhost:3000/cpp" frameborder="0"></iframe>
+            </div>
+
+            <div id="c" class="roadmap">
+                <iframe src="http://localhost:3000/c" frameborder="0"></iframe>
+            </div>
+
+            <div id="java" class="roadmap">
+                <iframe src="http://localhost:3000/java" frameborder="0"></iframe>
+            </div>
+
+            <div id="python" class="roadmap">
+                <iframe src="http://localhost:3000/python" frameborder="0"></iframe>
+            </div>
+
+            <div id="rust" class="roadmap">
+                <iframe src="http://localhost:3000/rust" frameborder="0"></iframe>
+            </div>
+
+            <div id="javascript" class="roadmap">
+                <iframe src="http://localhost:3000/javascript" frameborder="0"></iframe>
+            </div>
+
+            <div id="nodejs" class="roadmap">
+                <iframe src="http://localhost:3000/nodejs" frameborder="0"></iframe>
+            </div>
+
+            <div id="sql" class="roadmap">
+                <iframe src="http://localhost:3000/sql" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="footer">
+        <div class="normal_heading_box">
+            <hr>
+            <div class="first">
+                <h5 id="heading"><img src="https://cdn-icons-png.flaticon.com/128/7340/7340005.png" alt=""> WebReich
+                </h5>
+                <p>One People, One Mindset, One Community</p>
+            </div>
+            <h5 class="same_heading">Follow Us</h5>
+            <div class="footer_box">
+                <a href="https://www.youtube.com/@Webriech"><img
+                        src="https://cdn-icons-png.flaticon.com/128/174/174883.png" alt="" class="same_icons"></a>
+                <a href="https://www.instagram.com/shreexmann?igsh=OGQ5ZDc2ODk2ZA=="><img
+                        src="https://cdn-icons-png.flaticon.com/128/174/174855.png" alt="" class="same_icons"></a>
+                <a
+                    href="https://www.linkedin.com/in/shriyash-rulhe-655a9422a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img
+                        src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt="" class="same_icons"></a>
+                <a href="https://x.com/ShriyashRulhe?t=akUGDlfFqFq_TCVEjoz9ow&s=09"><img
+                        src="https://cdn-icons-png.flaticon.com/128/5968/5968830.png" alt="" class="same_icons"></a>
+                <a href="https://discord.com/invite/YUZzP6Dp"><img
+                        src="https://cdn-icons-png.flaticon.com/128/5968/5968756.png" alt="" class="same_icons"></a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="/js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

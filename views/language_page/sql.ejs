@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SQL</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css"> <!--This is a public css-->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <!--This is a bootstrap css to design bootstrap component as our requriments-->
+    <link rel="stylesheet" href="/css/everywhere.css">
+    <!--This is a css for not overwritting css for every component once you decelare a css is same for every components as our requriments-->
+</head>
+
+<body>
+    <div class="second">
+        <button onclick="toggleMode(), toggleImage()" id="dark_light"><img
+                src="https://cdn-icons-png.flaticon.com/128/4489/4489231.png" alt="" class="mode_icons"
+                id="buttonImage"></button>
+    </div>
+
+    <!-- <div class="normal_heading_box"> -->
+
+    <!-- beginner level -->
+    <div class="normal_heading_box">
+        <h4 class="same_heading">Learn Full SQL/MySql Programming Language</h4>
+        <img src="https://cdn-icons-png.flaticon.com/128/4492/4492311.png" alt="" class="big_icons">
+
+
+        <h4 class="language_heading"><img src="https://cdn-icons-png.flaticon.com/128/5996/5996260.png" alt=""
+                class="same_icons"> Beginner Level</h4>
+        <li>
+            <h6 class="same_heading">Understanding Databases:</h6>
+            <h6 class="language_para">Learn about databases, their types (relational, NoSQL), and the importance of
+                structured data storage.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Introduction to SQL:</h6>
+            <h6 class="language_para">Start with SQL fundamentals, understand SQL syntax, statements (SELECT, INSERT,
+                UPDATE, DELETE), and the basic structure of SQL queries.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Database Design and Modeling:</h6>
+            <h6 class="language_para">Explore database design principles, normalization, ER diagrams, and understand how
+                to design efficient database schemas.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">MySQL Basics:</h6>
+            <h6 class="language_para">Install MySQL, understand how to create databases, tables, and perform basic CRUD
+                operations (Create, Read, Update, Delete).</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Data Retrieval (SELECT Statements):</h6>
+            <h6 class="language_para">Dive into SELECT statements, learn filtering rows using WHERE clause, sorting,
+                limiting results, and performing simple joins.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Data Modification (INSERT, UPDATE, DELETE):</h6>
+            <h6 class="language_para">Learn how to insert new records, update existing records, and delete data using
+                INSERT, UPDATE, DELETE statements.</h6>
+        </li>
+    </div>
+
+    <!-- Intermediate level -->
+    <div class="normal_heading_box">
+        <h4 class="language_heading"><img src="https://cdn-icons-png.flaticon.com/128/5996/5996260.png" alt=""
+                class="same_icons"> Intermediate Level</h4>
+        <li>
+            <h6 class="same_heading">Advanced SELECT Queries:</h6>
+            <h6 class="language_para">Master more complex SELECT queries involving multiple tables, subqueries,
+                aggregate functions (SUM, AVG, COUNT), and groupings.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Joins and Relationships:</h6>
+            <h6 class="language_para">Understand different types of joins (INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL
+                JOIN), relationships (one-to-one, one-to-many, many-to-many), and their implementations in SQL.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Indexes and Optimization:</h6>
+            <h6 class="language_para">Learn about indexes, their importance in database performance, and optimizing
+                queries using indexes.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Data Constraints and Transactions:</h6>
+            <h6 class="language_para">Explore data constraints (NOT NULL, UNIQUE, CHECK) and transactions to ensure data
+                integrity and consistency.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Stored Procedures and Functions:</h6>
+            <h6 class="language_para">Understand stored procedures, functions, and triggers in MySQL, and their usage
+                for performing complex operations.</h6>
+        </li>
+    </div>
+
+    <!-- Advance level -->
+    <div class="normal_heading_box">
+        <h4 class="language_heading"><img src="https://cdn-icons-png.flaticon.com/128/5996/5996260.png" alt=""
+                class="same_icons"> Advanced Level</h4>
+        <li>
+            <h6 class="same_heading">Query Optimization and Performance Tuning:</h6>
+            <h6 class="language_para">Deep dive into query optimization techniques, execution plans, profiling queries,
+                and optimizing complex SQL queries.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Views and Materialized Views:</h6>
+            <h6 class="language_para">Learn about creating views and materialized views to simplify complex queries and
+                improve data access.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Database Security and Permissions:</h6>
+            <h6 class="language_para">Focus on database security, user management, permissions, and securing sensitive
+                data in MySQL.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Backup and Recovery:</h6>
+            <h6 class="language_para">Understand database backup strategies, recovery options, and disaster recovery
+                planning in MySQL.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Advanced Data Manipulation:</h6>
+            <h6 class="language_para">Explore advanced data manipulation techniques, such as pivot tables, conditional
+                logic, and recursive queries.</h6>
+        </li>
+    </div>
+
+    <!-- syntax of SQL/MySQl  -->
+    <div class="normal_heading_box">
+        <h4 class="language_heading"><img src="https://cdn-icons-png.flaticon.com/128/2490/2490396.png" alt=""
+                class="same_icons"> Full Course of SQL/MySql language in Free</h4>
+        <h6 class="language_para">Here are the best courses from top-notch YouTubers who have cracked into FANG
+            companies like Amazon, Microsoft, and Flipkart. Learn directly from them; these courses are absolutely free
+            of cost. If you think they're free, you might assume their quality is lower than paid courses, but trust me,
+            these courses exceed your expectations. Learn, practice, and rest assured, we're here to guide and assist
+            you at every step. Don't waste any more time—go, learn, and we'll provide timely updates for a better
+            future.</h6>
+    </div>
+
+    <div class="normal_heading_box">
+        <h6 class="language_heading">Learn Full SQL/MySql from Apna College</h6>
+        <h6 class="language_para">SQL - Complete Course in 3 Hours | SQL One Shot using MySQL</h6>
+        <div class="youtube_video"> <iframe src="https://www.youtube.com/embed/hlGoQC332VM?si=9zzz7UNFMSQtEex-"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+    </div>
+
+
+    <div class="normal_heading_box">
+        <h6 class="same_heading">Learn Full SQL/MySql from CodeHelp - Lakshay Bhaiya</h6>
+        <h6 class="language_para">Lecture 9: Complete SQL in 1 VIDEO</h6>
+        </h6>
+        <div class="youtube_video"> <iframe src="https://www.youtube.com/embed/D_wNQR3LeeM?si=UByhw8RnSdQ6SGBY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+    </div>
+
+    <div class="normal_heading_box">
+        <h6 class="same_heading">Learn Full SQL/MySql from Edureka</h6>
+        <h6 class="language_para">SQL Full Course In 10 Hours | SQL Tutorial | Complete SQL Course For Beginners |
+            Edureka</h6>
+        <div class="youtube_video"> <iframe src="https://www.youtube.com/embed/q_JsgpiuY98?si=PcXMu3qjiUFYiPsb"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+    </div>
+
+
+    <div class="normal_heading_box">
+        <h6 class="same_heading">Learn Full SQL/MySql from freeCodeCamp</h6>
+        <h6 class="language_para">SQL Tutorial for Beginners (and Technical Interview Questions Solved)</h6>
+        <div class="youtube_video"> <iframe src="https://www.youtube.com/embed/-fW2X7fh7Yg?si=h2Oi9S_jfdS7pnst"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+    </div>
+
+
+
+    <div class="normal_heading_box">
+        <h6 class="same_heading">Free SQL/MySql Course By Scaler Academy</h6>
+        <img src="https://assets-v2.scaler.com/assets/scaler/svg/scaler-logo-new-15cddca2e0196e677600f6671b42a288bdc89c398adc29fe82b7441503c4b129.svg.gz"
+            alt="" class="big_icons" alt="" class="big_icons">
+        <h6 class="same_heading"><a href="https://www.scaler.com/topics/course/sql-using-mysql-course/">SQL for
+                Beginners: Learn SQL using MySQL and Database Design Course
+            </a></h6>
+        </ <div class="normal_heading_box">
+        <h5 class="same_heading">Job Search Strategy After SQL/MySQL</h5>
+        <img src="https://cdn-icons-png.flaticon.com/128/11507/11507884.png" alt="" class="big_icons">
+        <li>
+            <h6 class="language_heading">Customize Resume and Portfolio:</h6>
+            <h6 class="language_para">Tailor your resume, highlighting your SQL/MySQL skills, web development projects,
+                and relevant technologies/frameworks/tools you've mastered.</h6>
+        </li>
+        <li>
+            <h6 class="language_heading">Networking and LinkedIn Profile:</h6>
+            <h6 class="language_para">Network with professionals in the web development field, attend meetups, and
+                engage in online communities. Optimize your LinkedIn profile to reflect your skills and interests.</h6>
+        </li>
+        <li>
+            <h6 class="language_heading">Apply for Internships/Entry-Level Positions:</h6>
+            <h6 class="language_para">Apply for internships or entry-level positions in web development, showcasing your
+                SQL/MySQL expertise and web development skills</h6>
+        </li>
+        <li>
+            <h6 class="language_heading">Continuous Learning and Certifications:</h6>
+            <h6 class="language_para">Keep learning and staying updated with the latest trends in web development.
+                Consider certifications or relevant courses to bolster your profile.</h6>
+        </li>
+        <li>
+            <h6 class="language_heading">Prepare for Interviews:</h6>
+            <h6 class="language_para">Brush up on your technical skills, be ready for coding challenges, and practice
+                common interview questions related to web development and SQL/MySQL.</h6>
+        </li>
+    </div>
+
+
+
+
+    <script src="/js/script1.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

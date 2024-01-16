@@ -1,0 +1,190 @@
+/* In this css we can decelare all css of one components like default css , defaults icons , buttons and other etc
+ */
+
+/* https://cdn-icons-png.flaticon.com/128/4289/4289241.png */
+
+.same_icons {
+   height: 25px;
+   background-color: transparent;
+   border: none;
+   padding: 0px;
+   width: 25px;
+   display: inline-block;
+}
+
+.big_icons {
+   height: 70px;
+   width: 70px;
+   background-color: transparent;
+   padding: 2px;
+   margin: 5px 0px;
+}
+
+.same_heading {
+   /* font-family: 'Alkatra'; */
+   font-family: 'Poppins', sans-serif;
+   font-weight: bold;
+   padding: 2px 4px;
+   letter-spacing: 1px;
+}
+
+.normal_heading {
+   /* font-family: 'Alkatra'; */
+   font-family: 'Poppins', sans-serif;
+   font-weight: normal;
+   padding: 2px 4px;
+   letter-spacing: 1px;
+}
+
+.center_heading_box {
+   border-radius: 7px;
+   background-color: #dadada0c;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: max-content;
+   padding: 10px 20px;
+   margin: 5px;
+   font-size: 0.8rem;
+   font-weight: bold;
+   font-family: 'Josefin Sans';
+}
+
+.normal_heading_box {
+   border: none;
+   border-radius: 6px;
+   padding: 10px 20px;
+   text-align: left;
+   font-size: 0.8rem;
+   background-color: #dadada0c;
+   font-family: 'Josefin Sans';
+   font-weight: normal;
+   margin: 10px 5px;
+   box-shadow: 1px 1px 4px #35353528;
+   list-style-type: none;
+   display: flex;
+   flex-direction: column;
+   align-items: left;
+}
+
+.animation_small_icons {
+   height: 25px;
+   background-color: transparent;
+   border: none;
+   padding: 0px;
+   width: 25px;
+   animation: animation1 0.8s linear infinite;
+}
+
+@keyframes animation1 {
+   0% {
+      transform: rotate(-20deg);
+   }
+
+   100% {
+      transform: scale(20deg);
+   }
+}
+
+.language_heading {
+   /* font-family: 'Alkatra'; */
+   font-family: 'Poppins', sans-serif;
+   font-weight: bold;
+   cursor: pointer;
+   padding: 2px 4px;
+   letter-spacing: 2px;
+   margin-top: 10px;
+}
+
+.language_para {
+   font-family: 'Poppins', sans-serif;
+   border-left: 3px solid #BA0020FF;
+   font-weight: normal;
+   padding: 0px 10px;
+   margin-left: 10px;
+   letter-spacing: 0px;
+   cursor: pointer;
+}
+
+.youtube_video iframe {
+   cursor: pointer;
+   height: fit-content;
+   width: fit-content;
+   border-radius: 10px;
+   background-position: center;
+   background-size: cover;
+   margin: 0px;
+}
+
+a {
+   text-decoration: underline;
+}
+
+span {
+   color: #BA0020FF;
+   font-weight: bold;
+}
+
+.dsa_heading {
+   /* font-family: 'Alkatra'; */
+   font-family: 'Poppins', sans-serif;
+   font-weight: bold;
+   padding: 0px;
+   /* letter-spacing: 2px; */
+}
+
+.dsa_box {
+   border-left: 3px solid #BA0020FF;
+   display: flex;
+   flex-direction: column;
+   padding: 0px 10px;
+   margin: 10px 0px;
+   background-color: #f0f0f00e;
+   border-radius: 7px;
+}
+
+.dsa_box_ans {
+   font-weight: bold;
+   font-size: 1rem;
+   display: flex;
+   padding: 0px 10px;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.big_button_box {
+   margin: 20px;
+   padding: 4px;
+   background-color: none;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.basic_heading {
+   font-family: 'Poppins', sans-serif;
+   font-weight: bold;
+   padding: 2px 4px;
+   letter-spacing: 1px;
+   margin-left: 10px;
+   margin-top: 15px;
+   color: rgb(170, 0, 37);
+}
+
+.basic_para {
+   font-family: 'Poppins', sans-serif;
+   padding: 2px 4px;
+   letter-spacing: 1px;
+   font-size: 0.9rem;
+   /* color: white; */
+   width: fit-content;
+   padding: 5px;
+   border-radius: 7px;
+}
+
+.footer_box{
+   padding: 10px;
+   border-radius: 7px;
+}

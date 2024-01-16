@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WebReich</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css"> <!--This is a public css-->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <!--This is a bootstrap css to design bootstrap component as our requriments-->
+    <link rel="stylesheet" href="/css/everywhere.css">
+    <!--This is a css for not overwritting css for every component once you decelare a css is same for every components as our requriments-->
+</head>
+
+<body>
+    <div class="first">
+        <h3 id="heading"><img src="https://cdn-icons-png.flaticon.com/128/7340/7340005.png" alt="">WebReich</h3>
+        <p>One People, One Mindset, One Community</p>
+    </div>
+    <!-- NAVBAR START -->
+
+    <div id="notification" class="notification">
+        <span class="close" onclick="closeNotification()"><img
+                src="https://cdn-icons-png.flaticon.com/128/9068/9068699.png" alt="" class="same_icons"></span> <br><br>
+        <h4 class="same_heading">Login For Better Experience</h4>
+        <form id="loginForm" action="/login" method="post">
+            <label for="email">Email : </label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password : </label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+            <h6 class="normal_heading">Don't have a account <a href="http://localhost:3000/register">Register</a></h6>
+        </form>
+    </div>
+
+    <div id="navbar">
+        <div class="zero">
+            <a href="https://linktr.ee/ShriyashRulhe"><button>Get 1 : 1 <br> MentorShip</button></a>
+        </div>
+        <div class="second">
+            <button onclick="toggleMode(), toggleImage()" id="dark_light"><img
+                    src="https://cdn-icons-png.flaticon.com/128/4489/4489231.png" alt="" class="mode_icons"
+                    id="buttonImage"></button>
+
+            <!-- Button trigger modal -->
+            <a href="http://localhost:3000/register"><button type="button" class="btn btn-primary"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal" id="login">
+                    Sign in
+                </button></a>
+            <a href="http://localhost:3000/login"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal" id="login">
+                    Login
+                </button></a>
+        </div>
+    </div>
+    <!-- NAVBAR ENDS -->
+
+    <!-- <div id="text-container" class="first">
+            <h3 id="text"></h3>
+        </div> -->
+
+    <div class="normal_heading_box">
+        <!-- <h3 class="same_heading">Welcome to Code Spark Community !</h3> -->
+        <div id="poster_box">
+            <div id="text-container" class="first">
+                <h4 id="text" class="same_heading"></h4>
+            </div>
+            <!-- <h4 class="language_heading">Welcome to Code Spark Community !</h4> -->
+        </div>
+    </div>
+
+    <div class="first normal_heading_box">
+        <h3 id="heading">What's Interesting <img src="https://cdn-icons-png.flaticon.com/128/4955/4955440.png" alt=""
+                class="heading_icons">
+        </h3>
+
+        <h3 class="same_heading">Tech Updates <img src="https://cdn-icons-png.flaticon.com/128/1661/1661036.png" alt=""
+                class="heading_icons">
+        </h3>
+        <a href="https://www.geeksforgeeks.org/courses/cpp-programming-basic-to-advanced">
+            <div id="news_card">
+                <p>Tue, Jan 2</p>
+                <h4 class="same_heading"> <img src="https://cdn-icons-png.flaticon.com/128/9019/9019234.png" alt=""
+                        class="heading_icons"> Master C++ Programming - Complete Beginner to Advanced
+                </h4>
+                <h5 class="same_heading">90% Refund After Course</h5>
+                <!-- <img src="https://w7.pngwing.com/pngs/114/914/png-transparent-rust-programming-language-logo-machine-learning-haskell-crab-animals-cartoon-crab-thumbnail.png"
+                        alt="" class="big_icons"> -->
+                <p>Become an ace in C++ Programming Language and master the C++ programming skills from
+                    basics to
+                    advanced. This course is a complete package of videos, notes & contests from basics to
+                    STL
+                    libraries & algorithms. The perfect C++ course for beginners.</p>
+            </div>
+        </a>
+    </div>
+
+    <div class="normal_heading_box">
+        <h5 class="same_heading"><img src="https://cdn-icons-png.flaticon.com/128/2617/2617962.png" alt=""
+                class="heading_icons">
+            Every
+            developer should possess proficiency in a programming language</h5>
+
+        <h5 class="language_para">Proper Guidance Of Every Language</h5>
+        <h5 class="language_para">Free Youtube Tutorials</h5>
+        <h5 class="language_para">Beginners To Advance Guidance</h5>
+
+        <div class="scroll-container">
+            <div class="scroll-content">
+                <div class="scroll-item"> <a href="/pages/languages.html">
+                        <li><img src="https://cdn-icons-png.flaticon.com/128/3665/3665923.png" alt="" class="big_icons">
+                        </li>
+                    </a></div>
+
+                <div class="scroll-item"> <a href="/pages/languages.html">
+                        <li><img src="https://cdn-icons-png.flaticon.com/128/6132/6132222.png" alt="" class="big_icons">
+                        </li>
+                    </a></div>
+
+                <div class="scroll-item"><a href="/pages/languages.html">
+                        <li><img src="https://cdn-icons-png.flaticon.com/128/226/226777.png" alt="" class="big_icons">
+                        </li>
+                    </a></div>
+
+                <div class="scroll-item"> <a href="/pages/languages.html">
+                        <li><img src="https://cdn-icons-png.flaticon.com/128/5968/5968350.png" alt="" class="big_icons">
+                        </li>
+                    </a></div>
+
+                <div class="scroll-item"> <a href="/pages/languages.html">
+                        <li><img src="https://w7.pngwing.com/pngs/114/914/png-transparent-rust-programming-language-logo-machine-learning-haskell-crab-animals-cartoon-crab-thumbnail.png"
+                                alt="" class="big_icons"></li>
+                    </a></div>
+
+                <div class="scroll-item"><a href="/pages/languages.html">
+                        <li><img src="https://cdn-icons-png.flaticon.com/128/174/174854.png" alt="" class="big_icons">
+                        </li>
+                    </a></div>
+
+                <div class="scroll-item"><a href="/pages/languages.html">
+                        <li><img src="https://cdn-icons-png.flaticon.com/128/732/732190.png" alt="" class="big_icons">
+                        </li>
+                    </a></div>
+
+                <div class="scroll-item"><a href="/pages/languages.html">
+                        <li><img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt="" class="big_icons">
+                        </li>
+                    </a></div>
+
+                <div class="scroll-item"><a href="/pages/languages.html">
+                        <li><img src="https://cdn-icons-png.flaticon.com/128/5968/5968322.png" alt="" class="big_icons">
+                        </li>
+                    </a></div>
+
+                <div class="scroll-item"><a href="/pages/languages.html">
+                        <li><img src="https://cdn-icons-png.flaticon.com/128/5968/5968332.png" alt="" class="big_icons">
+                        </li>
+                    </a></div>
+
+                <div class="scroll-item"><a href="/pages/languages.html">
+                        <li><img src="https://cdn-icons-png.flaticon.com/128/4492/4492311.png" alt="" class="big_icons">
+                        </li>
+                    </a></div>
+
+
+            </div>
+        </div>
+
+        <div class="big_button_box"><a href="http://localhost:3000/languages"><button type="button"
+                    class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal" id="login">
+                    Get Started For Free
+                </button></a></div>
+    </div>
+
+    <div class="normal_heading_box">
+        <h4 class="same_heading">Interview Preparation</h4>
+        <h5 class="same_heading">Top 50 Interview DSA Question By Shriyash </h5>
+        <h6 class="language_para">By solving these questions daily, mastering DSA, and showing proficiency
+            in them,
+            your knowledge will reach a supreme level, making you easily employable in top MNCs and
+            startups.
+            and we'll progress together. Questions will be updated monthly to match industry
+            requirements.</h6>
+
+        <h6 class="language_para">
+            <li>
+                <font color="red"> Slove This 50 DSA(Data Structure and Algorithm) Questions </font>
+            </li>
+            <li>
+                <font color="red"> Calculate Your Score in Score Board</font>
+            </li>
+        </h6>
+        <!-- <div class="big_button_box"><a href="http://localhost:3000/dsa_50"><button type="button" class="btn btn-danger"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal" id="login">
+                    Get Started For Free
+                </button></a></div> -->
+    </div>
+
+    <div class="normal_heading_box">
+        <h5 class="same_heading">Here are Some DSA Questions Out Of 50 </h5>
+
+        <ul id="taskList">
+            <div class="dsa_box">
+                <li class="task">
+                    <h6 class="dsa_heading">1. Subset Sum Equal To K</h6>
+                </li>
+                <div class="task_para">
+                    <p> Moderate </p>
+                    <p> 30m Avg Time </p>
+                    <p> 65% success </p>
+                </div>
+                <div class="task_para">
+                    <p> Topics </p>
+                    <p> 2D Array </p>
+                    <p> Dynamic Programming </p>
+                </div>
+                <div class="tasks_button_company">
+                    <p>Accenture</p>
+                    <p>Amazon</p>
+                    <p>JP Morgan</p>
+                    <p>Paypal</p>
+                    <p>MTX</p>
+                    <p>PayTm</p>
+                    <p>Siemens</p>
+                    <p>Deutsche Bank</p>
+                    <p>Amdocs</p>
+                    <p>HashedIn</p>
+                </div>
+                <div class="dsa_box_ans">
+                    <a href="https://www.codingninjas.com/studio/problems/subset-sum-equal-to-k_1550954"> Slove Problem
+                        <img src="https://cdn-icons-png.flaticon.com/128/2920/2920277.png" alt=""
+                            class="same_icons"></a>
+                    <a href=""> Solution <img src="https://cdn-icons-png.flaticon.com/128/174/174883.png" alt=""
+                            class="same_icons"></a>
+                </div>
+                <p>+15 more companies</p>
+            </div>
+
+            <div class="dsa_box">
+                <li class="task">
+                    <h6 class="dsa_heading">2. Print Pascal’s Triangle</h6>
+                </li>
+                <div class="task_para">
+                    <p> Easy </p>
+                    <p> 30m Avg Time </p>
+                    <p> 73.6% success </p>
+                </div>
+                <div class="task_para">
+                    <p> Topics </p>
+                    <p> 2D Array </p>
+                    <p> Dynamic Programming </p>
+                </div>
+                <div class="tasks_button_company">
+                    <!-- <p>Accenture</p>
+                    <p>Amazon</p>
+                    <p>JP Morgan</p>
+                    <p>Paypal</p>
+                    <p>MTX</p>
+                    <p>PayTm</p>
+                    <p>Siemens</p>
+                    <p>Deutsche Bank</p>
+                    <p>Amdocs</p>
+                    <p>HashedIn</p> -->
+                </div>
+                <div class="dsa_box_ans">
+                    <a href="https://leetcode.com/problems/pascals-triangle/description/"> Slove Problem <img
+                            src="https://cdn-icons-png.flaticon.com/128/2920/2920277.png" alt="" class="same_icons"></a>
+                    <a href=""> Solution <img src="https://cdn-icons-png.flaticon.com/128/174/174883.png" alt=""
+                            class="same_icons"></a>
+                </div>
+                <p>+15 more companies</p>
+            </div>
+
+            <div class="dsa_box">
+                <li class="task">
+                    <h6 class="dsa_heading">3. Largest Subarray With Equal Number Of 0s And 1s</h6>
+                </li>
+                <div class="task_para">
+                    <p> Medium </p>
+                    <p> 10m Avg Time </p>
+                    <p> 85% success </p>
+                </div>
+                <div class="task_para">
+                    <p> Topics </p>
+                    <p> Array </p>
+                    <p> Hash Table </p>
+                </div>
+                <div class="tasks_button_company">
+                    <p>Phone Pe</p>
+                    <p>Media.net</p>
+                    <p>Oracle</p>
+                    <p>SAP Labs</p>
+                    <p>Morgan Stanley</p>
+                    <p>Paypal</p>
+                    <p>Housing.com</p>
+                    <p>LTI</p>
+                    <p>Quora</p>
+                </div>
+                <div class="dsa_box_ans">
+                    <a
+                        href="https://www.codingninjas.com/studio/problems/largest-subarray-with-equal-number-of-0s-and-1s_839812">
+                        Slove Problem <img src="https://cdn-icons-png.flaticon.com/128/2920/2920277.png" alt=""
+                            class="same_icons"></a>
+                    <a href=""> Solution <img src="https://cdn-icons-png.flaticon.com/128/174/174883.png" alt=""
+                            class="same_icons"></a>
+                </div>
+                <p>+12 more companies</p>
+            </div>
+
+            <div class="dsa_box">
+                <li class="task">
+                    <h6 class="dsa_heading">4. Median of two sorted arrays</h6>
+                </li>
+                <div class="task_para">
+                    <p> Hard </p>
+                    <p> 25m Avg Time </p>
+                    <p> 65% success </p>
+                </div>
+                <div class="task_para">
+                    <p> Topics </p>
+                    <p> Binary Search </p>
+                    <p> Array </p>
+                </div>
+                <div class="tasks_button_company">
+                    <p>IBM</p>
+                    <p>BYJUS</p>
+                    <p>Apple</p>
+                    <p>Google</p>
+                    <p>Amazon</p>
+                    <p>LinkedIN</p>
+                    <p>Paypal</p>
+                    <p>Goldman Sachs</p>
+                    <p>Grab</p>
+                    <p>VMware INC</p>
+                    <p>Tata 1mg</p>
+                    <p>Optum</p>
+                    <p>Coding Ninjas</p>
+                </div>
+                <div class="dsa_box_ans">
+                    <a href="https://www.codingninjas.com/studio/problems/median-of-two-sorted-arrays_985294"> Slove
+                        Problem
+                        <img src="https://cdn-icons-png.flaticon.com/128/2920/2920277.png" alt=""
+                            class="same_icons"></a>
+                    <a href=""> Solution <img src="https://cdn-icons-png.flaticon.com/128/174/174883.png" alt=""
+                            class="same_icons"></a>
+                </div>
+                <p>+29 more companies</p>
+            </div>
+
+            <div class="dsa_box">
+                <li class="task">
+                    <h6 class="dsa_heading">5. Maximum Subarray Sum</h6>
+                </li>
+                <div class="task_para">
+                    <p> Medium </p>
+                    <p> 35m Avg Time </p>
+                    <p> 75% success </p>
+                </div>
+                <div class="task_para">
+                    <p> Topics :- </p>
+                    <p> Dynamic Programming </p>
+                    <p> Array </p>
+                </div>
+                <div class="tasks_button_company">
+                    <!-- <p>IBM</p>
+                    <p>BYJUS</p>
+                    <p>Apple</p>
+                    <p>Google</p> -->
+                </div>
+                <div class="dsa_box_ans">
+                    <a href="https://www.codingninjas.com/studio/problem-details/maximum-subarray-sum_630526"> Slove
+                        Problem
+                        <img src="https://cdn-icons-png.flaticon.com/128/2920/2920277.png" alt=""
+                            class="same_icons"></a>
+                    <a href=""> Solution <img src="https://cdn-icons-png.flaticon.com/128/174/174883.png" alt=""
+                            class="same_icons"></a>
+                </div>
+                <p>+29 more companies</p>
+            </div>
+
+        </ul>
+
+        <div class="big_button_box"><a href="http://localhost:3000/login"><button type="button" class="btn btn-danger"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal" id="login">
+                    Slove All 50 Questions
+                </button></a></div>
+
+    </div>
+
+    <div class="normal_heading_box">
+        <h5 class="same_heading">Basic Data Structures</h5>
+        <h6 class="same_heading">Here Are All Importance DSA Topic From Basic To Advance</h6>
+        <a href="">
+            <h6 class="language_para">1. Arrays</h6>
+        </a>
+        <a href="">
+            <h6 class="language_para">2. Linked List</h6>
+        </a>
+        <a href="">
+            <h6 class="language_para">3. Stacks</h6>
+        </a>
+        <a href="">
+            <h6 class="language_para">4. Queues</h6>
+        </a>
+        <a href="http://localhost:3000/login">
+            <h6 class="same_heading">See All Topic</h6>
+        </a>
+    </div>
+
+    <div class="normal_heading_box">
+        <h4 class="same_heading">Learn Web Dev.</h4>
+        <h5 class="same_heading">Introduction To Web Technology Basic To Advance</h5>
+        <h6 class="language"></h6>
+        <h6 class="language_para">Learn New Technology According To Market Requriments</h6>
+        <h6 class="language_para">Full Stack Web Development </h6>
+        <h6 class="language_para">JavaScript</h6>
+        <h6 class="language_para">Node JS</h6>
+        <h6 class="language_para">SQL/MYSQL</h6>
+        <h6 class="language_para">Git/Github</h6>
+    </div>
+
+
+
+
+    <div class="footer">
+        <div class="normal_heading_box">
+            <hr>
+            <div class="first">
+                <h5 id="heading"><img src="https://cdn-icons-png.flaticon.com/128/7340/7340005.png" alt=""> WebReich
+                </h5>
+                <p>One People, One Mindset, One Community</p>
+            </div>
+            <h5 class="same_heading">Follow Us</h5>
+            <div class="footer_box">
+                <a href="https://www.youtube.com/@Webriech"><img src="https://cdn-icons-png.flaticon.com/128/174/174883.png" alt="" class="same_icons"></a>
+                <a href="https://www.instagram.com/shreexmann?igsh=OGQ5ZDc2ODk2ZA=="><img src="https://cdn-icons-png.flaticon.com/128/174/174855.png" alt="" class="same_icons"></a>
+                <a href="https://www.linkedin.com/in/shriyash-rulhe-655a9422a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt="" class="same_icons"></a>
+                <a href="https://x.com/ShriyashRulhe?t=akUGDlfFqFq_TCVEjoz9ow&s=09"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968830.png" alt="" class="same_icons"></a>
+                <a href="https://discord.com/invite/YUZzP6Dp"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968756.png" alt="" class="same_icons"></a>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- </div> -->
+
+    <!-- END OF THE HIDDEN CONTENT -->
+
+    <script src="/js/script.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

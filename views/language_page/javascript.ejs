@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Javascript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css"> <!--This is a public css-->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <!--This is a bootstrap css to design bootstrap component as our requriments-->
+    <link rel="stylesheet" href="/css/everywhere.css">
+    <!--This is a css for not overwritting css for every component once you decelare a css is same for every components as our requriments-->
+</head>
+
+<body>
+    <div class="second">
+        <button onclick="toggleMode(), toggleImage()" id="dark_light"><img
+                src="https://cdn-icons-png.flaticon.com/128/4489/4489231.png" alt="" class="mode_icons"
+                id="buttonImage"></button>
+    </div>
+
+    <!-- <div class="normal_heading_box"> -->
+
+    <!-- beginner level -->
+    <div class="normal_heading_box">
+        <h4 class="same_heading">Learn Full JavaScript Programming Language</h4>
+        <img src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png" alt="" class="big_icons">
+
+
+        <h4 class="language_heading"><img src="https://cdn-icons-png.flaticon.com/128/5996/5996260.png" alt=""
+                class="same_icons"> Beginner Level</h4>
+        <li>
+            <h6 class="same_heading">Basics of Programming:</h6>
+            <h6 class="language_para">Understand basic programming concepts such as variables, data types, operators,
+                and control flow (if-else, loops).</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Introduction to JavaScript:</h6>
+            <h6 class="language_para">Learn JavaScript syntax, basic data types (numbers, strings, booleans), variables,
+                and how to write simple scripts.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Functions and Scope:</h6>
+            <h6 class="language_para">Explore functions, function declarations, expressions, scope, and how to use them
+                effectively in JavaScript.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">DOM Manipulation:</h6>
+            <h6 class="language_para">Learn about the Document Object Model (DOM) and how to manipulate HTML elements
+                using JavaScript.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Events and Event Handling:</h6>
+            <h6 class="language_para">Understand how to handle user events like click, input, submit, etc., and perform
+                actions based on these events.</h6>
+        </li>
+    </div>
+
+    <!-- Intermediate level -->
+    <div class="normal_heading_box">
+        <h4 class="language_heading"><img src="https://cdn-icons-png.flaticon.com/128/5996/5996260.png" alt=""
+                class="same_icons"> Intermediate Level</h4>
+        <li>
+            <h6 class="same_heading">Advanced Functions:</h6>
+            <h6 class="language_para">Dive deeper into functions, higher-order functions, closures, and understand
+                concepts like callback functions.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Asynchronous JavaScript (Callbacks, Promises):</h6>
+            <h6 class="language_para">Learn asynchronous programming, callbacks, Promises, handling asynchronous
+                operations in JavaScript.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">ES6+ Features:</h6>
+            <h6 class="language_para">Explore new features introduced in ECMAScript 6 (ES6) and beyond, such as arrow
+                functions, template literals, destructuring, let/const, etc.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Error Handling:</h6>
+            <h6 class="language_para">Study error handling in JavaScript using try-catch blocks, throwing and handling
+                custom errors.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Modules and Module Bundlers:</h6>
+            <h6 class="language_para">Understand JavaScript modules (import/export) and explore module bundlers like
+                Webpack for managing dependencies.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Regular Expressions:</h6>
+            <h6 class="language_para">Learn about pattern matching and string manipulation using regular expressions in
+                JavaScript.</h6>
+        </li>
+    </div>
+
+    <!-- Advance level -->
+    <div class="normal_heading_box">
+        <h4 class="language_heading"><img src="https://cdn-icons-png.flaticon.com/128/5996/5996260.png" alt=""
+                class="same_icons"> Advanced Level</h4>
+        <li>
+            <h6 class="same_heading">Advanced DOM Manipulation:</h6>
+            <h6 class="language_para">Explore more complex DOM manipulation techniques, event delegation, dynamic HTML
+                generation, etc.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Asynchronous JavaScript (Async/Await, Fetch API):</h6>
+            <h6 class="language_para">Master newer asynchronous features like Async/Await syntax and working with the
+                Fetch API for HTTP requests.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Object-Oriented Programming in JavaScript:</h6>
+            <h6 class="language_para">Learn about OOP concepts in JavaScript, prototypal inheritance, classes
+                (introduced in ES6), and object-oriented design patterns.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Performance Optimization:</h6>
+            <h6 class="language_para">Understand performance optimizations in JavaScript, including code profiling,
+                minimizing reflows, optimizing loops, and reducing memory leaks.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Community and Resources:</h6>
+            <h6 class="language_para">Engage in JavaScript communities, forums, contribute to open-source projects, and
+                utilize resources like MDN Web Docs, JavaScript blogs, and online courses.</h6>
+        </li>
+
+    </div>
+
+    <!-- syntax of Javascript -->
+    <div class="normal_heading_box">
+        <h4 class="language_heading"><img src="https://cdn-icons-png.flaticon.com/128/2490/2490396.png" alt=""
+                class="same_icons"> Full Course of JavaScript language in Free</h4>
+        <h6 class="language_para">Here are the best courses from top-notch YouTubers who have cracked into FANG
+            companies like Amazon, Microsoft, and Flipkart. Learn directly from them; these courses are absolutely free
+            of cost. If you think they're free, you might assume their quality is lower than paid courses, but trust me,
+            these courses exceed your expectations. Learn, practice, and rest assured, we're here to guide and assist
+            you at every step. Don't waste any more time—go, learn, and we'll provide timely updates for a better
+            future.</h6>
+    </div>
+
+    <div class="normal_heading_box">
+        <h6 class="language_heading">Learn Full JavaScript from Code With Harry</h6>
+        <h6 class="language_para"> Introduction to JavaScript + Setup | JavaScript Tutorials in Hindi </h6>
+        <div class="youtube_video"> <iframe src="https://www.youtube.com/embed/ER9SspLe4Hg?si=G0rX01nx-eYN3HYA"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+    </div>
+
+
+    <div class="normal_heading_box">
+        <h6 class="same_heading">Learn Full JavaScript from Apna College</h6>
+        <h6 class="language_para">JavaScript Tutorial (2024) for Beginners to Pro (with Notes, Projects & Practice
+            Questions)</h6>
+        </h6>
+        <div class="youtube_video"> <iframe src="https://www.youtube.com/embed/VlPiVmYuoqw?si=raY09KDU6CUcEUY_"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+    </div>
+
+    <div class="normal_heading_box">
+        <h6 class="same_heading">Learn Full JavaScript from freeCodeCamp</h6>
+        <h6 class="language_para">Build 15 JavaScript Projects - Vanilla JavaScript Course</h6>
+        </h6>
+        <div class="youtube_video"> <iframe src="https://www.youtube.com/embed/3PHXvlpOkf4?si=wxNi2IrGE_kU5o5I"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+    </div>
+
+    <div class="normal_heading_box">
+        <h6 class="same_heading">Free JavaScript Course By Scaler Academy</h6>
+        <img src="https://assets-v2.scaler.com/assets/scaler/svg/scaler-logo-new-15cddca2e0196e677600f6671b42a288bdc89c398adc29fe82b7441503c4b129.svg.gz"
+            alt="" class="big_icons" alt="" class="big_icons">
+        <h6 class="same_heading"><a href="https://www.scaler.com/topics/course/javascript-beginners/">JavaScript Course
+                With Certification: Unlocking the Power of JavaScript</a></h6>
+    </div>
+
+    <div class="normal_heading_box">
+        <h5 class="same_heading">RoadMap After JavaScript Towards Advance Web Development</h5>
+        <img src="https://cdn-icons-png.flaticon.com/128/7891/7891893.png" alt="" class="big_icons">
+        <li>
+            <h6 class="language_heading">Learn a Frontend Framework: </h6>
+            <h6 class="language_para"> Master a modern JavaScript framework like React, Angular, or Vue.js to deepen
+                your frontend development skills and stay competitive in the market.
+
+            </h6>
+        </li>
+        <li>
+            <h6 class="language_heading">Explore Backend Technologies: </h6>
+            <h6 class="language_para">Learn Node.js for server-side JavaScript programming. Understanding backend
+                development complements frontend skills, enabling you to become a full-stack developer</h6>
+        </li>
+        <li>
+            <h6 class="language_heading">Dive into Databases: </h6>
+            <h6 class="language_para">Acquire knowledge of databases like MongoDB, MySQL, or PostgreSQL to work with
+                data storage and management in web applications.
+
+            </h6>
+        </li>
+        <li>
+            <h6 class="language_heading">Explore Advanced Topics: </h6>
+            <h6 class="language_para">Learn about advanced JavaScript concepts, asynchronous programming, design
+                patterns, functional programming, and modern ES6+ features.</h6>
+        </li>
+        <li>
+            <h6 class="language_heading">Build Projects and Contribute: </h6>
+            <h6 class="language_para">Practice by building real-world projects and contribute to open-source projects.
+                This hands-on experience will enhance your skills and portfolio.
+
+            </h6>
+        </li>
+        <li>
+            <h6 class="language_heading">Stay Updated:</h6>
+            <h6 class="language_para">Keep abreast of the latest web development trends, tools, and technologies. Attend
+                workshops, webinars, and online courses to stay current in the dynamic field of web development.</h6>
+        </li>
+    </div>
+
+
+    <div class="normal_heading_box">
+        <h5 class="same_heading">What Jobs Are Avaiable In Market On Basis Of JavaScript ?</h5>
+        <img src="https://cdn-icons-png.flaticon.com/128/1819/1819928.png" alt="" class="big_icons">
+        <li>
+            <h6 class="same_heading">Frontend Developer : </h6>
+            <h6 class="language_para">Specialize in building user interfaces and interactive web applications using
+                JavaScript frameworks/libraries like React, Angular, or Vue.js.
+
+            </h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Backend Developer : </h6>
+            <h6 class="language_para">Specialize in building user interfaces and interactive web applications using
+                JavaScript frameworks/libraries like React, Angular, or Vue.js.
+
+            </h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Full-Stack Developer : </h6>
+            <h6 class="language_para">Combine frontend and backend skills to work on all aspects of web development,
+                utilizing both client-side and server-side technologies.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Mobile App Developer : </h6>
+            <h6 class="language_para">Use frameworks like React Native or frameworks based on JavaScript (such as Ionic)
+                to develop mobile applications for iOS and Android platforms.
+
+            </h6>
+        </li>
+        <li>
+            <h6 class="same_heading">UI/UX Developer : </h6>
+            <h6 class="language_para">Focus on user experience and interface design, utilizing JavaScript for creating
+                engaging and user-friendly web interfaces.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Web Performance Engineer : </h6>
+            <h6 class="language_para"> Optimize website performance using JavaScript, focusing on factors like loading
+                times, responsiveness, and efficient code practices.
+
+            </h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Technical Architect : </h6>
+            <h6 class="language_para">
+                Advance to a role where you design and oversee the technical aspects of large-scale web development
+                projects, making architectural decisions, and ensuring scalability and reliability.
+            </h6>
+        </li>
+    </div>
+
+
+
+
+    <script src="/js/script1.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

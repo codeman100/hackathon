@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>basic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css"> <!--This is a public css-->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <!--This is a bootstrap css to design bootstrap component as our requriments-->
+    <link rel="stylesheet" href="/css/everywhere.css">
+    <!--This is a css for not overwritting css for every component once you decelare a css is same for every components as our requriments-->
+</head>
+
+<body>
+    <div class="first">
+        <h3 id="heading"><img src="https://cdn-icons-png.flaticon.com/128/7340/7340005.png" alt="">WebReich</h3>
+        <p>One People, One Mindset, One Community</p>
+    </div>
+
+
+    <div id="navbar">
+        <div class="zero">
+            <a href="https://linktr.ee/ShriyashRulhe"><button>Get 1 : 1 <br> MentorShip</button></a>
+        </div>
+        <div class="second">
+            <button onclick="toggleMode(), toggleImage()" id="dark_light"><img
+                    src="https://cdn-icons-png.flaticon.com/128/4489/4489231.png" alt="" class="mode_icons"
+                    id="buttonImage"></button>
+
+            <!-- Button trigger modal -->
+            <a href="http://localhost:3000/login"><button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal" id="login">
+                    Login
+                </button></a>
+        </div>
+    </div>
+
+    <div class="normal_heading_box">
+        <input type="text" id="search-bar" oninput="searchQuestions()" placeholder="Search DSA Topics">
+    </div>
+
+    <div class="sidebar">
+        <div class="left_content same_heading">
+            <li><a href="#item1">Introduction To Array</a></li>
+            <div class="language_para">
+                <li><a href="">What Is Array ?</a></li>
+                <li><a href="">Types Of Array</a></li>
+                <li><a href="">Array Operations</a></li>
+                <!-- yt video link -->
+                <li><a href="">+More Array Concepts</a></li>
+            </div>
+            <li><a href="">Introduction To Linked List</a></li>
+            <div class="language_para">
+                <li><a href="">What is Linked List ? </a></li>
+                <li><a href="">Types Of Array</a></li>
+                <li><a href="">Array Operations</a></li>
+                <!-- yt video link -->
+                <li><a href="">+More Array Concepts</a></li>
+            </div>
+            <li><a href="">link3</a></li>
+        </div>
+
+        <div class="right_content" id="question-list">
+            <div class="same_heading question-item">
+                <h5 id="item1-1">1. Introduction To Array - 1D Array, 2D Array What Is An Array Learn Basic
+                    To Advance By Free Video Guidance...</h5>
+                <h5 class="basic_heading">1 - 1. What Is A Array ?</h5>
+                <h6>In data structures and algorithms (DSA), an array is a data structure
+                    that stores a
+                    collection of elements, each identified by an index or a key. The elements in an array are
+                    stored in contiguous memory locations, and the order of the elements is determined by their
+                    indices. Arrays are widely used in computer programming and are one of the simplest and most
+                    fundamental data structures.</h6>
+                <h5 class="basic_heading">1 -2. Syntax Of Array In C++</h5>
+                <h5 class="basic_para">
+                    int array[5]; // Declarations of array int datatype
+                </h5>
+                <h5 class="basic_para">
+                    char array[5]; // Declarations of array char datatype
+                </h5>
+                <h5 class="basic_para">
+                    float array[5]; // Declarations of array float datatype
+                </h5>
+                <h5 class="basic_para">
+                    int array[4] = {1,2,3,4}; // Initialization of arrays int datatype
+                </h5>
+                <h5 class="basic_heading" id="item1-2">1 - 3. Types Of Array </h5>
+                <h5 class="basic_para">1D Array Concept</h5>
+                <h6>There are majorly two types of arrays:
+
+                    One-dimensional array (1-D arrays): You can imagine a 1d array as a row, where elements are stored
+                    one
+                    after another.</h6>
+                <h5 class="basic_para">2D Array Concept</h5>
+                <h6>Two-dimensional array: 2-D Multidimensional arrays can be considered as an array of arrays or as a
+                    matrix consisting of rows and columns.></h6>
+                <h5 class="basic_para">3D Array Concept / Multidimensional array </h5>
+                <h6>Three-dimensional array: A 3-D Multidimensional array contains three dimensions, so it can be
+                    considered
+                    an array of two-dimensional arrays.</h6>
+                <h5 class="basic_heading" id="item1-3">1 - 4. Types of Array operations</h5>
+                <h5 class="basic_para">Traversal: Traverse through the elements of an array</h5>
+                <h5 class="basic_para">Insertion: Inserting a new element in an array.</h5>
+                <h5 class="basic_para">Deletion: Deleting element from the array.</h5>
+                <h5 class="basic_para">Searching: Search for an element in the array.</h5>
+                <h5 class="basic_para">Sorting: Maintaining the order of elements in the array.</h5>
+
+                <h6 class="basic_para">Deepen your understanding of array concepts by watching this comprehensive video
+                    covering all aspects, including all arrays concepts. Elevate your knowledge and master arrays the
+                    cornerstone of programming. Enrich your skills today with our exclusive array course! Available In
+                    Hindi Language</h6>
+            </div>
+            <hr>
+
+            <div class="same_heading question-item">
+                <h5 id="item1-1">2. Introduction To Linked List - 1D Array, 2D Array What Is Linked List Learn Basic
+                    To Advance By Free Video Guidance...</h5>
+                <h5 class="basic_heading">2 - 1. What Is A Linked List ?</h5>
+                <h6>A linked list is a linear data structure in which elements are stored in nodes, and each node points
+                    to the next node in the sequence. Unlike arrays, where elements are stored in contiguous memory
+                    locations, linked list elements are stored in non-contiguous memory locations, and the links between
+                    nodes facilitate the traversal of the list.</h6>
+                <h5 class="basic_heading">2 - 2. Syntax Of Linked List In C++</h5>
+                <h5 class="basic_para">
+                    struct Node {<br>
+                    <span></span> int data;<br>
+                    <span></span> Node* next;<br>
+                    };<br>
+                </h5>
+
+                <h5 class="basic_heading" id="item1-2">2 - 3. Types Of Linked List </h5>
+                <h5 class="basic_para">Singly Linked List</h5>
+                <h6>Each node points to the next node in the sequence, forming a unidirectional chain.</h6>
+                <h5 class="basic_para">Doubly Linked List</h5>
+                <h6>Each node has pointers to both the next and the previous nodes, allowing for bidirectional
+                    traversal.</h6>
+                <h5 class="basic_para">Circular Linked List</h5>
+                <h6>In this type, the last node points back to the first node, creating a circular structure.</h6>
+
+                <h5 class="basic_heading" id="item1-3">2 - 4. Key features of linked lists include</h5>
+                <h5 class="basic_para">Node Structure: Each node in a linked list contains two components:
+
+                    Data: The actual information or value stored in the node.
+                    Next (or Link/Pointer): A reference to the next node in the sequence.</h5>
+                <h5 class="basic_para"></h5>
+                <h5 class="basic_para"></h5>
+
+                <h6 class="basic_para">Deepen your understanding of array concepts by watching this comprehensive video
+                    covering all aspects, including all arrays concepts. Elevate your knowledge and master arrays the
+                    cornerstone of programming. Enrich your skills today with our exclusive array course! Available In
+                    Hindi Language</h6>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="normal_heading_box">
+            <hr>
+            <div class="first">
+                <h5 id="heading"><img src="https://cdn-icons-png.flaticon.com/128/7340/7340005.png" alt=""> WebReich
+                </h5>
+                <p>One People, One Mindset, One Community</p>
+            </div>
+            <h5 class="same_heading">Follow Us</h5>
+            <div class="footer_box">
+                <a href="https://www.youtube.com/@Webriech"><img
+                        src="https://cdn-icons-png.flaticon.com/128/174/174883.png" alt="" class="same_icons"></a>
+                <a href="https://www.instagram.com/shreexmann?igsh=OGQ5ZDc2ODk2ZA=="><img
+                        src="https://cdn-icons-png.flaticon.com/128/174/174855.png" alt="" class="same_icons"></a>
+                <a
+                    href="https://www.linkedin.com/in/shriyash-rulhe-655a9422a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img
+                        src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt="" class="same_icons"></a>
+                <a href="https://x.com/ShriyashRulhe?t=akUGDlfFqFq_TCVEjoz9ow&s=09"><img
+                        src="https://cdn-icons-png.flaticon.com/128/5968/5968830.png" alt="" class="same_icons"></a>
+                <a href="https://discord.com/invite/YUZzP6Dp"><img
+                        src="https://cdn-icons-png.flaticon.com/128/5968/5968756.png" alt="" class="same_icons"></a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src=" /js/script.js">
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

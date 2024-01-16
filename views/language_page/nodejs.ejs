@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Node Js</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css"> <!--This is a public css-->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <!--This is a bootstrap css to design bootstrap component as our requriments-->
+    <link rel="stylesheet" href="/css/everywhere.css">
+    <!--This is a css for not overwritting css for every component once you decelare a css is same for every components as our requriments-->
+</head>
+
+<body>
+    <div class="second">
+        <button onclick="toggleMode(), toggleImage()" id="dark_light"><img
+                src="https://cdn-icons-png.flaticon.com/128/4489/4489231.png" alt="" class="mode_icons"
+                id="buttonImage"></button>
+    </div>
+
+    <!-- <div class="normal_heading_box"> -->
+
+    <!-- beginner level -->
+    <div class="normal_heading_box">
+        <h4 class="same_heading">Learn Full Node Js Programming Language</h4>
+        <img src="https://cdn-icons-png.flaticon.com/128/5968/5968322.png" alt="" class="big_icons">
+
+
+        <h4 class="language_heading"><img src="https://cdn-icons-png.flaticon.com/128/5996/5996260.png" alt=""
+                class="same_icons"> Beginner Level</h4>
+        <li>
+            <h6 class="same_heading">JavaScript Basics : </h6>
+            <h6 class="language_para">Ensure a solid understanding of JavaScript fundamentals: variables, data types,
+                operators, control flow, functions, and objects.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Introduction to Node.js : </h6>
+            <h6 class="language_para">Learn about Node.js, its architecture, event-driven nature, and non-blocking I/O.
+            </h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Node.js Modules : </h6>
+            <h6 class="language_para">Understand modules in Node.js, how to import/export modules (require,
+                module.exports), and create your own modules.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">NPM (Node Package Manager) : </h6>
+            <h6 class="language_para">Familiarize yourself with NPM, managing dependencies, installing packages, and
+                creating package.json files for Node.js projects.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">File System and Streams : </h6>
+            <h6 class="language_para">Explore Node.js File System (fs) and Streams for reading and writing files,
+                handling file operations asynchronously.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Asynchronous Programming in Node.js : </h6>
+            <h6 class="language_para">Understand asynchronous programming using callbacks, promises, and events in
+                Node.js.</h6>
+        </li>
+    </div>
+
+    <!-- Intermediate level -->
+    <div class="normal_heading_box">
+        <h4 class="language_heading"><img src="https://cdn-icons-png.flaticon.com/128/5996/5996260.png" alt=""
+                class="same_icons"> Intermediate Level</h4>
+        <li>
+            <h6 class="same_heading">Express.js Framework : </h6>
+            <h6 class="language_para">Learn Express.js, a web application framework for Node.js. Understand routing,
+                middleware, and building RESTful APIs.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">HTTP and Web Servers : </h6>
+            <h6 class="language_para">Explore HTTP modules in Node.js, create web servers, handle HTTP requests, and
+                understand status codes, headers, and response handling.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Database Connectivity (e.g., MongoDB, MySQL) : </h6>
+            <h6 class="language_para">Learn to interact with databases in Node.js using MongoDB, MySQL, or other
+                database systems. Understand CRUD operations and integration.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Authentication and Authorization : </h6>
+            <h6 class="language_para">Implement user authentication and authorization in Node.js applications using
+                libraries like Passport.js or JSON Web Tokens (JWT).</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Error Handling and Logging : </h6>
+            <h6 class="language_para">Understand error handling mechanisms in Node.js, implement error middleware, and
+                use logging for debugging and monitoring.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Testing in Node.js : </h6>
+            <h6 class="language_para">Learn about testing frameworks like Mocha, Chai, Jest, and write tests for your
+                Node.js applications to ensure code quality.</h6>
+        </li>
+    </div>
+
+    <!-- Advance level -->
+    <div class="normal_heading_box">
+        <h4 class="language_heading"><img src="https://cdn-icons-png.flaticon.com/128/5996/5996260.png" alt=""
+                class="same_icons"> Advanced Level</h4>
+        <li>
+            <h6 class="same_heading">Advanced Express.js : </h6>
+            <h6 class="language_para">Dive deeper into Express.js, learn about advanced routing, middleware patterns,
+                error handling middleware, and building scalable applications.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Real-time Communication (WebSockets) : </h6>
+            <h6 class="language_para">Explore WebSockets with libraries like Socket.io for enabling real-time
+                communication between client and server.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Microservices Architecture : </h6>
+            <h6 class="language_para">Learn about building microservices-based applications in Node.js, focusing on
+                scalability and maintainability.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Security in Node.js : </h6>
+            <h6 class="language_para">Understand security best practices, protect against common security threats like
+                SQL injection, XSS, CSRF, and implement security measures in Node.js applications.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Performance Optimization : </h6>
+            <h6 class="language_para">Optimize Node.js applications for performance by minimizing bottlenecks,
+                implementing caching strategies, and profiling code.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Deployment and DevOps : </h6>
+            <h6 class="language_para">Learn deployment strategies for Node.js applications, containerization (using
+                Docker), CI/CD pipelines, and cloud services like AWS, Azure, or GCP.</h6>
+        </li>
+    </div>
+
+    <!-- syntax of Node Js  -->
+    <div class="normal_heading_box">
+        <h4 class="language_heading"><img src="https://cdn-icons-png.flaticon.com/128/2490/2490396.png" alt=""
+                class="same_icons"> Full Course of Node Js language in Free</h4>
+        <h6 class="language_para">Here are the best courses from top-notch YouTubers who have cracked into FANG
+            companies like Amazon, Microsoft, and Flipkart. Learn directly from them; these courses are absolutely free
+            of cost. If you think they're free, you might assume their quality is lower than paid courses, but trust me,
+            these courses exceed your expectations. Learn, practice, and rest assured, we're here to guide and assist
+            you at every step. Don't waste any more time—go, learn, and we'll provide timely updates for a better
+            future.</h6>
+    </div>
+
+    <div class="normal_heading_box">
+        <h6 class="language_heading">Learn Full Node Js from Thapa Technical</h6>
+        <h6 class="language_para"> Introduction to Node JS in Hindi | Node.JS Tutorial for Beginners in Hindi</h6>
+        <div class="youtube_video"> <iframe src="https://www.youtube.com/embed/IIpiLZGTWuo?si=tx2jHXxfGZqJtu9G"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+    </div>
+
+
+    <div class="normal_heading_box">
+        <h6 class="same_heading">Learn Full Node Js from freeCodeCamp</h6>
+        <h6 class="language_para">Node.js and Express.js - Full Course</h6>
+        </h6>
+        <div class="youtube_video"> <iframe src="https://www.youtube.com/embed/Oe421EPjeBE?si=9hTAaTT-kSwfuvLz"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+    </div>
+
+    <div class="normal_heading_box">
+        <h6 class="same_heading">Learn Full Node Js from Code With Haryy</h6>
+        <h6 class="language_para">Backend Tutorial: Node.Js Introduction and Installation | Web Development Tutorials
+            #63
+        </h6>
+        <div class="youtube_video"> <iframe src="https://www.youtube.com/embed/YFmgNiimfyk?si=ryqOzFwbIqKuEyBP"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+    </div>
+
+    <div class="normal_heading_box">
+        <h6 class="same_heading">Learn Full Node Js from Edureka</h6>
+        <h6 class="language_para">Node JS Full Course - Learn Node.js in 7 Hours | Node.js Tutorial for Beginners |
+            Edureka
+        </h6>
+        <div class="youtube_video"> <iframe src="https://www.youtube.com/embed/JnvKXcSI7yk?si=NCca9RnfW0Re60AE"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe></div>
+    </div>
+
+    <div class="normal_heading_box">
+        <h6 class="same_heading">Free Node Js Course By Scaler Academy</h6>
+        <img src="https://assets-v2.scaler.com/assets/scaler/svg/scaler-logo-new-15cddca2e0196e677600f6671b42a288bdc89c398adc29fe82b7441503c4b129.svg.gz"
+            alt="" class="big_icons" alt="" class="big_icons">
+        <h6 class="same_heading"><a href="https://www.scaler.com/topics/course/nodejs/">Node JS Certification Course -
+                Master the Fundamentals
+
+            </a></h6>
+    </div>
+
+
+    <div class="normal_heading_box">
+        <h5 class="same_heading">DevOps Roadmap After Node Js </h5>
+        <img src="https://cdn-icons-png.flaticon.com/128/7891/7891893.png" alt="" class="big_icons">
+        <li>
+            <h6 class="same_heading">Understand DevOps Principles : </h6>
+            <h6 class="language_para">Learn about the core principles of DevOps - collaboration, automation, continuous
+                integration (CI), continuous deployment (CD), and infrastructure as code (IaC).</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Version Control Systems (e.g., Git) : </h6>
+            <h6 class="language_para">Gain expertise in Git for version control, branching strategies, merging, and
+                collaborating on codebases.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Continuous Integration/Continuous Deployment (CI/CD) : </h6>
+            <h6 class="language_para">Learn CI/CD pipelines using tools like Jenkins, GitLab CI/CD, or GitHub Actions to
+                automate building, testing, and deploying applications.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Configuration Management : </h6>
+            <h6 class="language_para">Understand configuration management tools like Ansible, Puppet, or Chef for
+                managing and automating infrastructure.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Containerization and Orchestration : </h6>
+            <h6 class="language_para">Dive into containerization with Docker, and learn orchestration tools like
+                Kubernetes for managing containerized applications at scale.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Monitoring and Logging : </h6>
+            <h6 class="language_para">Gain knowledge about monitoring tools (Prometheus, Grafana) and logging solutions
+                (ELK stack - Elasticsearch, Logstash, Kibana) for observability.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Cloud Platforms : </h6>
+            <h6 class="language_para">Familiarize yourself with cloud services provided by AWS, Azure, or Google Cloud
+                Platform (GCP) for deploying and managing applications.</h6>
+        </li>
+        <li>
+            <h6 class="same_heading">Infrastructure as Code (IaC) : </h6>
+            <h6 class="language_para">Learn about infrastructure provisioning using tools like Terraform or
+                CloudFormation to automate infrastructure setup and maintenance.</h6>
+        </li>
+    </div>
+
+    <div class="normal_heading_box">
+        <h5 class="same_heading">Web Development and Job Security / OffCampus </h5>
+        <img src="https://cdn-icons-png.flaticon.com/128/11507/11507884.png" alt="" class="big_icons">
+        <li>
+            <h6 class="language_heading">Strengthen Node.js Skills:</h6>
+            <h6 class="language_para">Keep enhancing your Node.js skills, learn advanced concepts, explore frameworks
+                like Express.js, and build more complex applications.</h6>
+        </li>
+        <li>
+            <h6 class="language_heading">Full-Stack Development:</h6>
+            <h6 class="language_para">Gain proficiency in front-end technologies like React, Vue.js, or Angular to
+                become a full-stack developer, enabling you to work on both client-side and server-side.</h6>
+        </li>
+        <li>
+            <h6 class="language_heading">Security in Web Development:</h6>
+            <h6 class="language_para">Focus on web security fundamentals, understand common vulnerabilities (XSS, CSRF,
+                SQL injection), and implement security best practices in your applications.</h6>
+        </li>
+        <li>
+            <h6 class="language_heading">Portfolio Development:</h6>
+            <h6 class="language_para">Build a strong portfolio showcasing your web development projects, including
+                Node.js applications, full-stack projects, or any DevOps-related work.</h6>
+        </li>
+        <li>
+            <h6 class="language_heading">Continuous Learning:</h6>
+            <h6 class="language_para">Stay updated with the latest trends, tools, and best practices in web development,
+                DevOps, and cloud technologies through courses, blogs, and community engagement.</h6>
+        </li>
+        <li>
+            <h6 class="language_heading">Networking and Certification:</h6>
+            <h6 class="language_para">Engage in web development communities, attend meetups, and consider relevant
+                certifications in DevOps or web development to enhance your profile.</h6>
+        </li>
+        <li>
+            <h6 class="language_heading">Job Search Strategy:</h6>
+            <h6 class="language_para">Tailor your resume and cover letter to highlight your skills in Node.js, web
+                development, and DevOps practices. Leverage professional networks and job boards to search for relevant
+                job opportunities.</h6>
+        </li>
+    </div>
+
+
+
+
+    <script src="/js/script1.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
