@@ -161,76 +161,12 @@ app.post('/login', async (req, res) => {
 
 
 // Forgot Password
-const elasticEmailApiKey = '5911CC2BF23594D3F71D131A12F6C4706E29F81CE72216B3E93FB5258800F0F6738EC6E1966B46D8B287C1603DE270A1';
 
-app.get('/forgot-password', (req, res) => {
-    res.render('forgot-password.ejs');
-});
-
-app.post('/forgot-password', async (req, res) => {
-    const userEmail = req.body.email;
-
-    db.query('SELECT * FROM users WHERE email = ?', [userEmail], async (err, results) => {
-        if (err) {
-            return res.status(500).send('Error finding user.');
-        }
-
-        if (results.length === 0) {
-            return res.send('User not found. Please register.');
-        }
-
-        const resetToken = crypto.randomBytes(20).toString('hex');
-        const userId = results[0].id;
-
-        db.query('UPDATE users SET reset_token = ? WHERE id = ?', [resetToken, userId], async (err) => {
-            if (err) {
-                return res.status(500).send('Error updating reset token.');
-            }
-
-            // Send the reset link to the user's email using Elastic Email API
-            const resetLink = `http://localhost:3000/password-reset?token=${resetToken}`;
-            try {
-                const response = await axios.post('https://api.elasticemail.com/v2/email/send', {
-                    apikey: '5911CC2BF23594D3F71D131A12F6C4706E29F81CE72216B3E93FB5258800F0F6738EC6E1966B46D8B287C1603DE270A1',
-                    to: userEmail,
-                    subject: 'Password Reset',
-                    bodyText: `Click this link to reset your password: ${resetLink}`
-                });
-
-                console.log('Email sent:', response.data);
-                res.send('Password reset link sent to your email.');
-            } catch (error) {
-                console.error('Error sending email:', error.response.data);
-                res.status(500).send('Error sending email.');
-            }
-        });
-    });
-});
-
-// App Reset
-
-app.get('/password-reset', (req, res) => {
-    const resetToken = req.query.token;
-    res.render('password-reset', { token: resetToken });
-});
-
-app.post('/password-reset', (req, res) => {
-    const resetToken = req.body.token;
-    const newPassword = req.body.newPassword;
-
-    db.query('UPDATE users SET password = ?, reset_token = NULL WHERE reset_token = ?', [newPassword, resetToken], (err) => {
-        if (err) {
-            return res.status(500).send('Error updating password.');
-        }
-
-        res.send('Password updated successfully.');
-    });
-});
 
 // Other routes and remaining code
 
 // Start the server
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });

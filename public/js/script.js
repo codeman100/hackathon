@@ -138,20 +138,20 @@ document.addEventListener('DOMContentLoaded', function () {
 // 50 DSA Question Cheack point JS end
 
 // Typing js start
-const text = "Beyond the Basics Unlock Your Potential with Expert Interview Prep and Advanced Web Dev Classes!";
+// const text = "Beyond the Basics Unlock Your Potential with Expert Interview Prep and Advanced Web Dev Classes!";
 
-let index = 0;
+// let index = 0;
 
-function displayText() {
-  document.getElementById('text').textContent = text.slice(0, index);
-  index++;
+// function displayText() {
+//   document.getElementById('text').textContent = text.slice(0, index);
+//   index++;
 
-  if (index > text.length) {
-    index = 0;
-  }
-}
+//   if (index > text.length) {
+//     index = 0;
+//   }
+// }
 
-setInterval(displayText, 50);
+// setInterval(displayText, 50);
 
 // Typing js End
 
