@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"  # Replace with your build command
+  publish = "views"          # Replace with your publish directory
+
+[context.production.environment]
+  PGUSER = "jhvnszuj"
+  PGHOST = "manny.db.elephantsql.com"
+  PGDATABASE = "jhvnszuj"
+  PGPASSWORD = "5N0OwGkPL7u3MTIcMxO3fJqo6saFBLZs"
+  PGPORT = "5432"
