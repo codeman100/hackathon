@@ -11,13 +11,6 @@ const LocalStrategy = require('passport-local').Strategy;
 const { Client } = require('pg');
 const { Pool } = require('pg');
 
-// const dbHost = process.env.DB_HOST;
-// const dbUser = process.env.DB_USER;
-// const dbPassword = process.env.DB_PASSWORD;
-// const dbName = process.env.DB_DATABASE;
-// const dbPort = process.env.DB_PORT;
-
-
 const pool = new Pool({
     user: 'jhvnszuj',
     host: 'manny.db.elephantsql.com',
@@ -52,6 +45,7 @@ app.set('views', __dirname + '/views');
 app.use(express.static('views'));
 
 app.use(express.static(path.join(__dirname, 'public')));
+
 
 
 // Index page
@@ -112,7 +106,6 @@ app.get('/register', (req, res) => {
 });
 
 // Registration post request
-
 app.post('/register', async (req, res) => {
     const { email, name, password } = req.body;
 
